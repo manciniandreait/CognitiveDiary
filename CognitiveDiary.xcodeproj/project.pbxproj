@@ -8,6 +8,9 @@
 
 /* Begin PBXBuildFile section */
 		E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */; };
+		E0CCAB64251D3E530076BF06 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB62251D3E530076BF06 /* DiaryModel.swift */; };
+		E0CCAB65251D3E530076BF06 /* DiaryModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */; };
+		E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */; };
 		E0EAB9B725129D0800539ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9B625129D0800539ACC /* AppDelegate.swift */; };
 		E0EAB9B925129D0800539ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9B825129D0800539ACC /* SceneDelegate.swift */; };
 		E0EAB9BE25129D0800539ACC /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EAB9BC25129D0800539ACC /* Main.storyboard */; };
@@ -18,6 +21,9 @@
 
 /* Begin PBXFileReference section */
 		E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
+		E0CCAB62251D3E530076BF06 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModelProperties.swift; sourceTree = "<group>"; };
+		E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCTableViewController.swift; sourceTree = "<group>"; };
 		E0EAB9B325129D0800539ACC /* CognitiveDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CognitiveDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EAB9B625129D0800539ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		E0EAB9B825129D0800539ACC /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -39,6 +45,37 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		E0CCAB5E251D3D920076BF06 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				E0EAB9B825129D0800539ACC /* SceneDelegate.swift */,
+				E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */,
+				E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */,
+			);
+			name = ViewControllers;
+			sourceTree = "<group>";
+		};
+		E0CCAB60251D3DF30076BF06 /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				E0EAB9BC25129D0800539ACC /* Main.storyboard */,
+				E0EAB9C225129D0A00539ACC /* Assets.xcassets */,
+				E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */,
+				E0EAB9C725129D0A00539ACC /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		E0CCAB61251D3E080076BF06 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				E0CCAB62251D3E530076BF06 /* DiaryModel.swift */,
+				E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */,
+				E0EAB9BF25129D0800539ACC /* CognitiveDiary.xcdatamodeld */,
+			);
+			name = Models;
+			sourceTree = "<group>";
+		};
 		E0EAB9AA25129D0800539ACC = {
 			isa = PBXGroup;
 			children = (
@@ -59,13 +96,9 @@
 			isa = PBXGroup;
 			children = (
 				E0EAB9B625129D0800539ACC /* AppDelegate.swift */,
-				E0EAB9B825129D0800539ACC /* SceneDelegate.swift */,
-				E0EAB9BC25129D0800539ACC /* Main.storyboard */,
-				E0EAB9C225129D0A00539ACC /* Assets.xcassets */,
-				E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */,
-				E0EAB9C725129D0A00539ACC /* Info.plist */,
-				E0EAB9BF25129D0800539ACC /* CognitiveDiary.xcdatamodeld */,
-				E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */,
+				E0CCAB61251D3E080076BF06 /* Models */,
+				E0CCAB5E251D3D920076BF06 /* ViewControllers */,
+				E0CCAB60251D3DF30076BF06 /* Supporting Files */,
 			);
 			path = CognitiveDiary;
 			sourceTree = "<group>";
@@ -97,7 +130,7 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 1170;
-				LastUpgradeCheck = 1170;
+				LastUpgradeCheck = 1200;
 				ORGANIZATIONNAME = "Andrea Mancini";
 				TargetAttributes = {
 					E0EAB9B225129D0800539ACC = {
@@ -144,7 +177,10 @@
 				E0EAB9C125129D0800539ACC /* CognitiveDiary.xcdatamodeld in Sources */,
 				E0EAB9B725129D0800539ACC /* AppDelegate.swift in Sources */,
 				E0EAB9B925129D0800539ACC /* SceneDelegate.swift in Sources */,
+				E0CCAB65251D3E530076BF06 /* DiaryModelProperties.swift in Sources */,
+				E0CCAB64251D3E530076BF06 /* DiaryModel.swift in Sources */,
 				E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */,
+				E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,6 +232,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
@@ -256,6 +293,7 @@
 				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
 				CLANG_WARN_STRICT_PROTOTYPES = YES;
 				CLANG_WARN_SUSPICIOUS_MOVE = YES;
