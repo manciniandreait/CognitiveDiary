@@ -10,7 +10,11 @@ import UIKit
 
 class ABCTableViewController: UITableViewController {
 
-    @IBOutlet weak var contentText: UITextView!
+    
+    @IBOutlet weak var titleText: UITextField!
+    @IBOutlet weak var aContentText: UITextView!
+    @IBOutlet weak var bContentText: UITextView!
+    @IBOutlet weak var cContentText: UITextView!
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -35,18 +39,33 @@ class ABCTableViewController: UITableViewController {
         // 2
         let entity = DiaryModel.createEntity(in_context: managedContext)!
 
-        let diaryitem =  DiaryModel(entity: entity, insertInto: managedContext)
+        let diaryItem =  DiaryModel(entity: entity, insertInto: managedContext)
         
         // 3
-        diaryitem.content = contentText.text
+        if let text = titleText.text, text.isEmpty {
+            titleText.text = generateTitle()
+        }
+
+        diaryItem.title = titleText.text
+        diaryItem.content = aContentText.text + bContentText.text + cContentText.text
 
         // 4
         do {
             try managedContext.save()
-            print("Saved")
+            print("saved")
         } catch let error as NSError {
             print("Could not save. \(error), \(error.userInfo)")
         }
+    }
+    
+    func generateTitle() -> String
+    {
+        let date = Date()
+        let formatter = DateFormatter()
+        formatter.dateFormat = "dd/MM/yyyy hh:mm"
+        let result = formatter.string(from: date)
+        
+        return "New ABC Notes - " + result
     }
 
 }

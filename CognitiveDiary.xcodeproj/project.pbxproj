@@ -8,8 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */; };
-		E0CCAB64251D3E530076BF06 /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB62251D3E530076BF06 /* DiaryModel.swift */; };
-		E0CCAB65251D3E530076BF06 /* DiaryModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */; };
 		E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */; };
 		E0EAB9B725129D0800539ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9B625129D0800539ACC /* AppDelegate.swift */; };
 		E0EAB9B925129D0800539ACC /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9B825129D0800539ACC /* SceneDelegate.swift */; };
@@ -17,12 +15,12 @@
 		E0EAB9C125129D0800539ACC /* CognitiveDiary.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9BF25129D0800539ACC /* CognitiveDiary.xcdatamodeld */; };
 		E0EAB9C325129D0A00539ACC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = E0EAB9C225129D0A00539ACC /* Assets.xcassets */; };
 		E0EAB9C625129D0A00539ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */; };
+		E165AFFA251DBEE1004414BE /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF8251DBEE1004414BE /* DiaryModel.swift */; };
+		E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
-		E0CCAB62251D3E530076BF06 /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
-		E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModelProperties.swift; sourceTree = "<group>"; };
 		E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCTableViewController.swift; sourceTree = "<group>"; };
 		E0EAB9B325129D0800539ACC /* CognitiveDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CognitiveDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		E0EAB9B625129D0800539ACC /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -32,6 +30,8 @@
 		E0EAB9C225129D0A00539ACC /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		E0EAB9C525129D0A00539ACC /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		E0EAB9C725129D0A00539ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E165AFF8251DBEE1004414BE /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
+		E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModelProperties.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,8 +69,8 @@
 		E0CCAB61251D3E080076BF06 /* Models */ = {
 			isa = PBXGroup;
 			children = (
-				E0CCAB62251D3E530076BF06 /* DiaryModel.swift */,
-				E0CCAB63251D3E530076BF06 /* DiaryModelProperties.swift */,
+				E165AFF8251DBEE1004414BE /* DiaryModel.swift */,
+				E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */,
 				E0EAB9BF25129D0800539ACC /* CognitiveDiary.xcdatamodeld */,
 			);
 			name = Models;
@@ -175,10 +175,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				E0EAB9C125129D0800539ACC /* CognitiveDiary.xcdatamodeld in Sources */,
+				E165AFFA251DBEE1004414BE /* DiaryModel.swift in Sources */,
 				E0EAB9B725129D0800539ACC /* AppDelegate.swift in Sources */,
 				E0EAB9B925129D0800539ACC /* SceneDelegate.swift in Sources */,
-				E0CCAB65251D3E530076BF06 /* DiaryModelProperties.swift in Sources */,
-				E0CCAB64251D3E530076BF06 /* DiaryModel.swift in Sources */,
+				E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */,
 				E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */,
 				E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */,
 			);
@@ -327,7 +327,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLS9ZZ23X5;
+				DEVELOPMENT_TEAM = N3X6J464H5;
 				INFOPLIST_FILE = CognitiveDiary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -346,7 +346,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = JLS9ZZ23X5;
+				DEVELOPMENT_TEAM = N3X6J464H5;
 				INFOPLIST_FILE = CognitiveDiary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (

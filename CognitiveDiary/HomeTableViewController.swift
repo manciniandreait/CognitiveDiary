@@ -11,7 +11,7 @@ import CoreData
 
 class HomeTableViewController: UITableViewController {
 
-    var diaryitems: [DiaryModel] = []
+    var diaryItems: [DiaryModel] = []
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -27,7 +27,7 @@ class HomeTableViewController: UITableViewController {
         super.viewWillAppear(animated)
         
         do {
-            diaryitems = try DiaryModel.fetchData() ?? []
+            diaryItems = try DiaryModel.fetchData() ?? []
             tableView.reloadData()
         } catch let error as NSError {
             print("Error fetching data: \(error.localizedDescription)")
@@ -37,14 +37,14 @@ class HomeTableViewController: UITableViewController {
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
         
-        return diaryitems.count
+        return diaryItems.count
     }
 
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "DiaryItem", for: indexPath)
 
-        let diaryitem = diaryitems[indexPath.row]
-        cell.textLabel?.text = diaryitem.content ?? ""
+        let diaryItem = diaryItems[indexPath.row]
+        cell.textLabel?.text = diaryItem.title ?? ""
         
         return cell
     }

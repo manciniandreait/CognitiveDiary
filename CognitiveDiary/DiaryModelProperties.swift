@@ -1,8 +1,8 @@
 //
-//  Diary+CoreDataProperties.swift
+//  DiaryModel+CoreDataProperties.swift
 //  CognitiveDiary
 //
-//  Created by Andrea Mancini on 24/09/2020.
+//  Created by Alberto Azzari on 25/09/2020.
 //  Copyright © 2020 Andrea Mancini. All rights reserved.
 //
 //
@@ -33,10 +33,11 @@ extension DiaryModel {
         return try managedContext.fetch(fetchRequest)
     }
         
-    
+
     @NSManaged public var content: String?
     @NSManaged public var date: Date?
     @NSManaged public var type: String?
+    @NSManaged public var title: String?
 
 }
 

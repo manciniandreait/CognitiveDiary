@@ -1,8 +1,8 @@
 //
-//  Diary+CoreDataClass.swift
+//  DiaryModel+CoreDataClass.swift
 //  CognitiveDiary
 //
-//  Created by Andrea Mancini on 24/09/2020.
+//  Created by Alberto Azzari on 25/09/2020.
 //  Copyright © 2020 Andrea Mancini. All rights reserved.
 //
 //

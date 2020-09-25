@@ -3,9 +3,10 @@
     <entity name="Diary" representedClassName="DiaryModel" syncable="YES">
         <attribute name="content" optional="YES" attributeType="String"/>
         <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="title" optional="YES" attributeType="String"/>
         <attribute name="type" optional="YES" attributeType="String"/>
     </entity>
     <elements>
-        <element name="Diary" positionX="-63" positionY="-18" width="128" height="88"/>
+        <element name="Diary" positionX="-63" positionY="-18" width="128" height="103"/>
     </elements>
 </model>
