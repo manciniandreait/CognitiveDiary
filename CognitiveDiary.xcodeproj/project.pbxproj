@@ -17,6 +17,7 @@
 		E0EAB9C625129D0A00539ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */; };
 		E165AFFA251DBEE1004414BE /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF8251DBEE1004414BE /* DiaryModel.swift */; };
 		E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */; };
+		E1BCDCB3252615D600644F14 /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +33,7 @@
 		E0EAB9C725129D0A00539ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E165AFF8251DBEE1004414BE /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
 		E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModelProperties.swift; sourceTree = "<group>"; };
+		E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextViewPlaceholder.swift; path = ../../../Desktop/UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -58,6 +60,7 @@
 		E0CCAB60251D3DF30076BF06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
+				E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */,
 				E0EAB9BC25129D0800539ACC /* Main.storyboard */,
 				E0EAB9C225129D0A00539ACC /* Assets.xcassets */,
 				E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */,
@@ -181,6 +184,7 @@
 				E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */,
 				E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */,
 				E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */,
+				E1BCDCB3252615D600644F14 /* UITextViewPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

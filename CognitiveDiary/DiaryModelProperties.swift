@@ -36,7 +36,6 @@ extension DiaryModel {
 
     @NSManaged public var content: String?
     @NSManaged public var date: Date?
-    @NSManaged public var type: String?
     @NSManaged public var title: String?
 
 }
