@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		E0A70D7E2526643E00990F12 /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0A70D7D2526643E00990F12 /* UITextViewPlaceholder.swift */; };
 		E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */; };
 		E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */; };
 		E0EAB9B725129D0800539ACC /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = E0EAB9B625129D0800539ACC /* AppDelegate.swift */; };
@@ -17,10 +18,10 @@
 		E0EAB9C625129D0A00539ACC /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */; };
 		E165AFFA251DBEE1004414BE /* DiaryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF8251DBEE1004414BE /* DiaryModel.swift */; };
 		E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */; };
-		E1BCDCB3252615D600644F14 /* UITextViewPlaceholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		E0A70D7D2526643E00990F12 /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 		E0B9521E2512A8D200BD1D31 /* HomeTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTableViewController.swift; sourceTree = "<group>"; };
 		E0CCAB69251D41A60076BF06 /* ABCTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ABCTableViewController.swift; sourceTree = "<group>"; };
 		E0EAB9B325129D0800539ACC /* CognitiveDiary.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CognitiveDiary.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -33,7 +34,6 @@
 		E0EAB9C725129D0A00539ACC /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		E165AFF8251DBEE1004414BE /* DiaryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModel.swift; sourceTree = "<group>"; };
 		E165AFF9251DBEE1004414BE /* DiaryModelProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DiaryModelProperties.swift; sourceTree = "<group>"; };
-		E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; name = UITextViewPlaceholder.swift; path = ../../../Desktop/UITextViewPlaceholder.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,7 +60,7 @@
 		E0CCAB60251D3DF30076BF06 /* Supporting Files */ = {
 			isa = PBXGroup;
 			children = (
-				E1BCDCB2252615D600644F14 /* UITextViewPlaceholder.swift */,
+				E0A70D7D2526643E00990F12 /* UITextViewPlaceholder.swift */,
 				E0EAB9BC25129D0800539ACC /* Main.storyboard */,
 				E0EAB9C225129D0A00539ACC /* Assets.xcassets */,
 				E0EAB9C425129D0A00539ACC /* LaunchScreen.storyboard */,
@@ -184,7 +184,7 @@
 				E165AFFB251DBEE1004414BE /* DiaryModelProperties.swift in Sources */,
 				E0B9521F2512A8D200BD1D31 /* HomeTableViewController.swift in Sources */,
 				E0CCAB6A251D41A60076BF06 /* ABCTableViewController.swift in Sources */,
-				E1BCDCB3252615D600644F14 /* UITextViewPlaceholder.swift in Sources */,
+				E0A70D7E2526643E00990F12 /* UITextViewPlaceholder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -331,7 +331,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3X6J464H5;
+				DEVELOPMENT_TEAM = JLS9ZZ23X5;
 				INFOPLIST_FILE = CognitiveDiary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
@@ -350,7 +350,7 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
-				DEVELOPMENT_TEAM = N3X6J464H5;
+				DEVELOPMENT_TEAM = JLS9ZZ23X5;
 				INFOPLIST_FILE = CognitiveDiary/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 13.7;
 				LD_RUNPATH_SEARCH_PATHS = (
